@@ -10,6 +10,11 @@ var env = {
   AUTH0_CALLBACK_URL: process.env.AUTH0_CALLBACK_URL || 'http://localhost:3000/callback'
 }
 
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.redirect('');
+});
+
 router.get('/login',
   function(req, res){
     res.render('login', { env: env });
