@@ -12,7 +12,7 @@ var env = {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.redirect('/reports/');
+  res.redirect('/');
 });
 
 router.get('/login',
